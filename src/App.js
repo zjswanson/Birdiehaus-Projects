@@ -1,13 +1,30 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
+import { Grid, Row, Col } from 'react-bootstrap';
 import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
+import Navigation from './Navigation.js';
+import Hero from './Hero.js';
+
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap-theme.css';
+import './App.css';
 
 class Home extends Component {
   render() {
     return(
       <div>
-      <h2>This is home content</h2>
+        <Hero heroText='BirdieHaus Projects'></Hero>
+        <Grid>
+          <Row>
+            <Col xs={12} md={9}>
+              <h2>The place that makes the good stuff</h2>
+              <p>THis is some home page text.  THeres tons ofcontent here.  Lots of words.  THis is some home page text.  THeres tons ofcontent here.  Lots of words.THis is some home page text.  THeres tons ofcontent here.  Lots of words.THis is some home page text.  THeres tons ofcontent here.  Lots of words.THis is some home page text.  THeres tons ofcontent here.  Lots of words.THis is some home page text.  THeres tons ofcontent here.  Lots of words.THis is some home page text.  THeres tons ofcontent here.  Lots of words.THis is some home page text.  THeres tons ofcontent here.  Lots of words.THis is some home page text.  THeres tons ofcontent here.  Lots of words.THis is some home page text.  THeres tons ofcontent here.  Lots of words.THis is some home page text.  THeres tons ofcontent here.  Lots of words.THis is some home page text.  THeres tons ofcontent here.  Lots of words.</p>
+            </Col>
+            <Col xs={12} md={3}>
+              <p>This is the sidebar of the homepage.  This is the sidebar of the homepage.  This is the sidebar of the homepage.  This is the sidebar of the homepage.  This is the sidebar of the homepage.  This is the sidebar of the homepage.  This is the sidebar of the homepage.  This is the sidebar of the homepage.  This is the sidebar of the homepage.  This is the sidebar of the homepage.  This is the sidebar of the homepage.  This is the sidebar of the homepage.  This is the sidebar of the homepage.  This is the sidebar of the homepage.  This is the sidebar of the homepage.  This is the sidebar of the homepage.  This is the sidebar of the homepage.  This is the sidebar of the homepage.  This is the sidebar of the homepage.  This is the sidebar of the homepage.  This is the sidebar of the homepage.  This is the sidebar of the homepage.  This is the sidebar of the homepage.  </p>
+            </Col>
+          </Row>
+        </Grid>
       </div>
     );
   }
@@ -16,9 +33,17 @@ class Home extends Component {
 class ARoute extends Component {
   render() {
     return(
-      <div>
-      <h2>This is route content</h2>
-      </div>
+      <Grid>
+        <Row>
+          <Col xs={12} md={9}>
+            <h2>The place that makes the good stuff</h2>
+            <p>TThis is the text of a route</p>
+          </Col>
+          <Col xs={12} md={3}>
+            <p>This text is on the side of the route.</p>
+          </Col>
+        </Row>
+      </Grid>
     );
   }
 }
@@ -28,10 +53,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="App">
-          <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <h1 className="App-title">Welcome to React</h1>
-          </header>
+         <Navigation handleSelect={this.handleSelect}></Navigation>
           <Switch>
             <Route path='/aroute' component={ARoute} />
             <Route path='/' component={Home} />
