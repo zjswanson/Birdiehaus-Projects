@@ -18,7 +18,7 @@ class Home extends Component {
           <Row>
             <Col xs={12} md={9}>
               <h2>The place that makes the good stuff</h2>
-              <h4>Hey Zach!  Look at the Kin template on squarespace, using Julius Sans One for headers and Open Sans for body text.</h2>
+              <h4>Hey Zach!  Look at the Kin template on squarespace, using Julius Sans One for headers and Open Sans for body text.</h4>
               <h4>Use lots of white, open space.  Light greys and blacks for type</h4>
 
               <p>THis is some home page text.  THeres tons ofcontent here.  Lots of words.  THis is some home page text.  THeres tons ofcontent here.  Lots of words.THis is some home page text.  THeres tons ofcontent here.  Lots of words.THis is some home page text.  THeres tons ofcontent here.  Lots of words.THis is some home page text.  THeres tons ofcontent here.  Lots of words.THis is some home page text.  THeres tons ofcontent here.  Lots of words.THis is some home page text.  THeres tons ofcontent here.  Lots of words.THis is some home page text.  THeres tons ofcontent here.  Lots of words.THis is some home page text.  THeres tons ofcontent here.  Lots of words.THis is some home page text.  THeres tons ofcontent here.  Lots of words.THis is some home page text.  THeres tons ofcontent here.  Lots of words.THis is some home page text.  THeres tons ofcontent here.  Lots of words.</p>
